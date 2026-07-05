@@ -1,0 +1,74 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "soc2doc",
+  "colors": {
+    "primary": "#0a1f3a",
+    "light": "#16a34a",
+    "dark": "#15803d"
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://soc2doc.ai"
+  },
+  "fonts": {
+    "heading": { "family": "Inter" },
+    "body": { "family": "Inter" }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Review my SOC 2 — free",
+      "href": "https://soc2doc.ai/review"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Product",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "product/commitment-review"]
+          },
+          {
+            "group": "The process",
+            "pages": ["product/how-it-works", "product/confidentiality", "product/after-the-review"]
+          }
+        ]
+      },
+      {
+        "tab": "Why soc2doc",
+        "groups": [
+          {
+            "group": "Positioning",
+            "pages": ["why/what-soc2doc-is", "why/vs-vanta-drata-sprinto", "why/faq"]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": ["api/introduction", "api/authentication"]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "soc2doc",
+        "items": [
+          { "label": "Start a free review", "href": "https://soc2doc.ai/review" },
+          { "label": "Pricing", "href": "https://soc2doc.ai/pricing" },
+          { "label": "How it works", "href": "https://soc2doc.ai/how-it-works" }
+        ]
+      }
+    ]
+  }
+}
