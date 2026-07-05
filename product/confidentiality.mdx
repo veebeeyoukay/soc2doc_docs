@@ -1,0 +1,45 @@
+---
+title: "Confidentiality"
+description: "Who sees your report, in what order, and nobody else. Mutual NDA before upload, private storage, encryption in transit and at rest, deletion on request."
+---
+
+Three parties see your report, in this order, and nobody else: the automated
+extraction pipeline, the vetted assessor who verifies the output before delivery,
+and you.
+
+## The order of access
+
+<Steps>
+  <Step title="The extraction pipeline">
+    An automated pipeline reads the report and extracts commitments, cadences, and
+    dependencies. The report is encrypted in transit and at rest.
+  </Step>
+  <Step title="A vetted assessor">
+    A practitioner verifies the extracted output before it reaches you. Assessors
+    work under written confidentiality obligations, reviews are anonymized where
+    possible, and access is need-to-work only.
+  </Step>
+  <Step title="You">
+    The finished Commitment Review arrives by email. It is yours.
+  </Step>
+</Steps>
+
+## The controls around it
+
+- **Mutual NDA before upload.** The NDA is executed before the upload is even
+  enabled. You get a copy by email with the acceptance timestamp. The text is public
+  at [soc2doc.ai/nda](https://soc2doc.ai/nda).
+- **Separate authorization log.** Your permission for machine and human analysis is
+  logged separately, with its own timestamp.
+- **Encryption.** The report is encrypted in transit and at rest; stored objects are
+  private and are never rendered publicly.
+- **Deletion on request.** You can request deletion at any time at no cost. If you
+  want guaranteed secure deletion immediately after delivery, with a signed
+  certificate for your own vendor-risk records, that is the $99 option on the
+  [pricing page](https://soc2doc.ai/pricing).
+
+<Note>
+Free reviews are retained and anonymized to improve the service — that is stated
+plainly in the authorization you give at upload. Deletion is always available at no
+cost, and the $99 option adds a signed certificate.
+</Note>

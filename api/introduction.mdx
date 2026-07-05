@@ -1,0 +1,45 @@
+---
+title: "API (developer preview)"
+description: "soc2doc does not expose a public API yet. This section describes the shape of the API being built — no callable endpoints, no fabricated examples."
+---
+
+<Note>
+soc2doc does not expose a public API yet. There is no public API today. This section
+describes the shape of the API we are building — request access to the developer
+preview to be notified when endpoints go live. No endpoint on these pages is
+callable, and no request or response example here is real.
+</Note>
+
+## Why this section exists now
+
+We would rather document the intent honestly than ship fabricated endpoints. When a
+public API ships, this section binds to a real OpenAPI specification and Mintlify
+generates the endpoint reference and a try-it playground from it. Until then, this
+is a scaffold — structure and direction, nothing callable.
+
+## The shape we are building toward
+
+The developer surface follows the product. The likely first capabilities map to
+what soc2doc already does by hand:
+
+- **Submit a report for a Commitment Review** — programmatically start the same
+  flow the [free review](https://soc2doc.ai/review) runs today, NDA and
+  authorization included.
+- **Retrieve extracted commitments** — the mirrored commitments and cadences from a
+  completed review, structured for your own systems.
+- **Review status** — where a submitted report sits in extraction and
+  practitioner verification.
+
+<Warning>
+The list above is direction, not a contract. Field names, resources, and behavior
+are not finalized and will not exist until the API is released. Do not build against
+anything here yet.
+</Warning>
+
+## Get notified
+
+Want the developer preview when it opens? Reach out through the
+[marketing site](https://soc2doc.ai) and ask to be added to the API preview list.
+
+See [authentication](/api/authentication) for how access will work once the
+preview opens.
