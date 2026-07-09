@@ -1,45 +1,43 @@
 ---
 title: "API (developer preview)"
-description: "soc2doc does not expose a public API yet. This section describes the shape of the API being built — no callable endpoints, no fabricated examples."
+description: "soc2doc does not expose a public API yet. This section describes the intended direction without presenting any callable endpoints."
 ---
 
 <Note>
-soc2doc does not expose a public API yet. There is no public API today. This section
-describes the shape of the API we are building — request access to the developer
-preview to be notified when endpoints go live. No endpoint on these pages is
-callable, and no request or response example here is real.
+soc2doc does not expose a public API yet. This section describes the direction of
+the developer surface being considered. No endpoint on these pages is callable, and
+no request or response example here is real.
 </Note>
 
-## Why this section exists now
+## Why this section exists
 
-We would rather document the intent honestly than ship fabricated endpoints. When a
-public API ships, this section binds to a real OpenAPI specification and Mintlify
-generates the endpoint reference and a try-it playground from it. Until then, this
-is a scaffold — structure and direction, nothing callable.
+It is better to document the boundary clearly than to imply an API exists before it
+does. When a public API ships, this section will be tied to a real specification
+and updated with verifiable behavior.
 
-## The shape we are building toward
+Until then, treat this as product direction only.
 
-The developer surface follows the product. The likely first capabilities map to
-what soc2doc already does by hand:
+## The shape we are considering
 
-- **Submit a report for a Commitment Review** — programmatically start the same
-  flow the [free review](https://soc2doc.ai/review) runs today, NDA and
-  authorization included.
-- **Retrieve extracted commitments** — the mirrored commitments and cadences from a
-  completed review, structured for your own systems.
-- **Review status** — where a submitted report sits in extraction and
+The first developer capabilities will likely follow the product workflow:
+
+- **Submit a report for review** - start the same Commitment Review flow available
+  today, including NDA and authorization requirements.
+- **Retrieve commitments** - access the reviewed commitment and cadence output in a
+  structured form.
+- **Check review status** - see where a submitted report sits in extraction and
   practitioner verification.
 
 <Warning>
-The list above is direction, not a contract. Field names, resources, and behavior
-are not finalized and will not exist until the API is released. Do not build against
+This list is direction, not a contract. Field names, resources, and behavior are
+not finalized and do not exist until the API is released. Do not build against
 anything here yet.
 </Warning>
 
 ## Get notified
 
-Want the developer preview when it opens? Reach out through the
+Want to hear when the developer preview opens? Reach out through the
 [marketing site](https://soc2doc.ai) and ask to be added to the API preview list.
 
-See [authentication](/api/authentication) for how access will work once the
-preview opens.
+See [authentication](/api/authentication) for how access will be documented once
+the preview becomes real.
