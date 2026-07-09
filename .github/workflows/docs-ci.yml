@@ -1,0 +1,32 @@
+name: Docs CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate Mintlify docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Honesty gate
+        run: bash scripts/honesty-grep.sh
+
+      - name: Mintlify validate
+        run: npx -y mint@latest validate
+
+      - name: Mintlify broken links
+        run: npx -y mint@latest broken-links
+
+      - name: Mintlify export
+        run: npx -y mint@latest export --output /tmp/soc2doc-docs-export.zip
