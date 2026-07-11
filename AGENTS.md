@@ -40,3 +40,7 @@ Docs-as-code source for `docs.soc2doc.ai`, the public Mintlify documentation sit
 ## Child DOX Index
 
 None.
+
+## Content boundary — this repo is PUBLIC
+
+Canonical structure rules live in the private repo: `soc2doc/STRUCTURE.md`. Binding here: content arrives only by deliberate, sanitized promotion — never sourced directly from PRDs or `.planning/`. No client/tenant names, no roadmap, no internal pricing mechanics (public price: One Plan, $999/mo), no security implementation detail. Task tracking: Linear (ITS-), branch names from Linear, `Fixes ITS-xxx` in PRs.
