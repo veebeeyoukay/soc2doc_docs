@@ -1,0 +1,51 @@
+---
+title: "Third parties"
+description: "How the console reads your report's providers, cloud hosts, and subservice organizations into a reviewable map you confirm - never auto-confirmed."
+---
+
+Your issued SOC 2 report already names the organizations your system depends on:
+the CPA firm that performed the audit, the cloud provider that hosts production,
+an identity provider, a subservice organization carved out of scope. The console
+reads that language and turns it into a map you review, instead of a list you
+build by hand.
+
+This is a console capability, part of ongoing management on the One Plan. It is
+separate from the free Commitment Review, which mirrors commitments only.
+
+## What gets mapped
+
+<CardGroup cols={2}>
+  <Card title="Providers and what they supply" icon="building">
+    Each organization your report names, and the specific product or service it
+    provides - hosting, identity, monitoring, the audit itself.
+  </Card>
+  <Card title="How it relates to your system" icon="git-branch">
+    Whether the relationship is stated as hosting, storing, processing, or
+    supporting your system, and the control-reliance posture your report
+    describes - inherited, carved out, monitored, or reference only.
+  </Card>
+</CardGroup>
+
+## Suggestions, not facts
+
+<Note>
+Nothing in the map becomes official on its own. Every provider, offering, and
+relationship starts as a suggestion, anchored to the exact sentence and page it
+came from. You confirm what's accurate or dismiss what isn't - the console never
+promotes a suggestion to confirmed on your behalf.
+</Note>
+
+If your report is silent about a relationship, the console leaves it out. It does
+not infer a vendor from context, and it does not fill gaps with a generic list of
+"common" providers.
+
+## Why this instead of a spreadsheet
+
+A flat vendor list answers "who do we work with." It doesn't answer "which of
+these does our SOC 2 report actually describe, and how." The map exists so that
+question has a citable answer - one you can point an auditor to, not one you
+have to reconstruct from memory before the next audit period.
+
+<Card title="Review my SOC 2 - free" icon="arrow-right" href="https://soc2doc.ai/review">
+  Start with the free review. The third-party map is part of ongoing management afterward.
+</Card>

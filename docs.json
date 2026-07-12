@@ -36,6 +36,10 @@
           {
             "group": "The process",
             "pages": ["product/how-it-works", "product/confidentiality", "product/after-the-review"]
+          },
+          {
+            "group": "Ongoing management",
+            "pages": ["product/third-parties"]
           }
         ]
       },
