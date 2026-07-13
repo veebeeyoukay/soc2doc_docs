@@ -39,7 +39,12 @@
           },
           {
             "group": "Ongoing management",
-            "pages": ["product/third-parties"]
+            "pages": [
+              "product/managing-access",
+              "product/evidence-library",
+              "product/scenario-advisor",
+              "product/third-parties"
+            ]
           }
         ]
       },
